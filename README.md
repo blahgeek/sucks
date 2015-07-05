@@ -20,4 +20,15 @@ SELINUX=permissive
 SELINUXTYPE=targeted
 ```
 
-## NetworkManager
+## NetworkManager & systemd-networkd & systemd-resolved
+
+```
+systemctl stop NetworkManager
+systemctl disable NetworkManager
+systemctl stop systemd-networkd
+systemctl disable systemd-networkd
+systemctl stop systemd-resolved
+systemctl disable systemd-resolved
+```
+
+Use [netctl](https://wiki.archlinux.org/index.php/Netctl)
