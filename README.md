@@ -32,3 +32,11 @@ systemctl disable systemd-resolved
 ```
 
 Use [netctl](https://wiki.archlinux.org/index.php/Netctl)
+
+## Ubuntu apt auto upgrades
+
+```
+> cat /etc/apt/apt.conf.d/20auto-upgrades
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Unattended-Upgrade "0";
+```
