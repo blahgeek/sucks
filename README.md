@@ -40,3 +40,9 @@ Use [netctl](https://wiki.archlinux.org/index.php/Netctl)
 APT::Periodic::Update-Package-Lists "0";
 APT::Periodic::Unattended-Upgrade "0";
 ```
+
+## OpenBLAS
+
+It would set CPU affinity at library loading, makes ALL MULTITHREADED PROGRAMS unusable.
+
+Uninstall it, use `blas` and `cblas`.
