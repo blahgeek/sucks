@@ -46,3 +46,7 @@ APT::Periodic::Unattended-Upgrade "0";
 It would set CPU affinity at library loading, makes ALL MULTITHREADED PROGRAMS unusable.
 
 Uninstall it, use `blas` and `cblas`.
+
+## systemd-nspawn & systemd-importd
+
+They would AUTOMATICALLY CREATE BTRFS SUBVOLUMES for you (/var/lib/portables and /var/lib/machines): https://cgit.freedesktop.org/systemd/systemd/commit/?id=113b3fc1a8061f4a24dd0db74e9a3cd0083b2251
